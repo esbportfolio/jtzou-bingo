@@ -1,0 +1,9 @@
+**.csv
+**.pdf
+**.bat
+**.exe
+**.lock
+test_*
+test-*
+config/*
+vendor/*

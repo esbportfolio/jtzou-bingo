@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Stop processing if already in the /public directory
+RewriteRule ^public/ - [L,NC]
+
+# Static resources if they exist
+RewriteCond public/$0 -F
+RewriteRule .* public/$0 [L,NC]
+
+# Route all other requests
+RewriteRule (.*) public/index.php [L,NC]
